@@ -60,7 +60,7 @@ class PrayerSeeder extends Seeder
                 $zone->name = $name;
 
                 foreach ($times as $time => $name)
-                    $zone->$type = rand(1, 20);
+                    $zone->$time = rand(1, 20);
 
                 $zone->save();
 
